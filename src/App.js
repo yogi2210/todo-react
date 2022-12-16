@@ -5,6 +5,8 @@ import {Task} from './Task'
 function App() {
   const [todoList, setTodoList] = useState([])
   const [newTask, setNewTask] = useState("")
+  
+  
 
   const handleChange = (e)=>{
     setNewTask(e.target.value)
@@ -14,6 +16,8 @@ function App() {
     const task = {
       id: todoList.length === 0 ? 1 : todoList[todoList.length - 1].id + 1,
       taskName: newTask
+     
+      
     }
     setTodoList([...todoList, task])
    }
@@ -21,6 +25,8 @@ function App() {
    const deleteTask = (id)=>{
       setTodoList(todoList.filter((task)=> task.id !== id))
    }
+
+  
 
   return (
     <div className="App">
