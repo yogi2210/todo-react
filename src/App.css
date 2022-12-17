@@ -55,7 +55,8 @@
 
 .task-div button{
   height: 20px;
-  width: 20px;
+  /* width: 20px; */
+  padding: 0 5px;
   background-color: brown;
   border: none;
   border-radius: 5px;
